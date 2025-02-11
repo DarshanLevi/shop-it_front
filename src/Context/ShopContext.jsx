@@ -15,7 +15,6 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-
     fetch(`${process.env.REACT_APP_API_URL}/getallproducts`)
       .then((response) => response.json())
       .then((data) => setAll_Product(data));
@@ -23,19 +22,18 @@ const ShopContextProvider = (props) => {
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-
     if (localStorage.getItem("auth-token")) {
       fetch(`${process.env.REACT_APP_API_URL}/addToCart`, {
         method: "POST",
         headers: {
           Accept: "application/form-data",
-          "auth-token": `${localStorage.getItem("auth-token")}`,
-          "Content-type": "application/json",
+          "auth-token": `${localStorage.getItem('auth-token')}`,
+          'Content-type':'application/json'
         },
-        body: JSON.stringify({ itemId }),
+        body: JSON.stringify({"itemId":itemId})
       })
-        .then((response) => response.json())
-        .then((data) => console.log(data));
+      .then((response)=>response.json())
+      .then((data)=>console.log(data));
     }
   };
 
