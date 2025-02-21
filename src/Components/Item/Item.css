@@ -19,10 +19,14 @@
   font-weight: 500;
   text-decoration: line-through;
 }
-.item:hover{
-    transform: scale(1.05);
-    transition: 0.6s;
+.item {
+  transition: transform 0.6s ease-in-out;
 }
+
+.item:hover {
+  transform: scale(1.05);
+}
+
 
 .popular-item{
   margin-top: 50px;
