@@ -97,80 +97,87 @@
   width: 170px;
   height: 58px;
   font-size: 16px;
-  background: rgba(70, 70, 70, 0.815);
+  background: rgba(135, 130, 130, 0.815);
   color: white;
   cursor: pointer;
 }
 
-@media (max-width: 470px) {
-  .CartPage {
+@media (max-width: 768px) {
+  .cartItems {
     margin: 50px 20px;
   }
 
-  .CartPage-format-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    font-size: 14px;
-    padding: 15px 0px;
+  .cartItems-format-main {
+    display: none;
   }
 
-  .CartPage-product-icon {
+  .cartItems-format {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .cartItems-format .X-image {
+    height: 15px;
+    width: auto;
+  }
+
+  .cartItems-format img {
     height: 50px;
   }
 
-  .CartPage-remove-icon {
-    width: 12px;
-    margin: 0px 20px;
-  }
-
-  .CartPage-quantity {
+  .cartItems-quantity {
     width: 50px;
     height: 40px;
   }
 
-  .CartPage-down {
+  .cartItems-remove-icon {
+    width: 12px;
+  }
+
+  .cartItems-down {
     flex-direction: column;
     margin: 50px 0px;
   }
 
-  .CartPage-total {
-    margin-right: 0;
+  .cartItems-total {
     width: 100%;
   }
 
-  .CartPage-total-item {
-    padding: 10px 0px;
+  .cartItems-total-item {
     font-size: 14px;
+    padding: 10px 0px;
   }
 
-  .CartPage-total button {
-    width: 100%;
+  .cartItems-total button {
+    width: 80%;
     height: 50px;
     font-size: 14px;
   }
 
-  /* Push the promo section down */
-  .CartPage-promoCode {
+  .cartItems-promoCode {
     order: 2;
     width: 100%;
     margin-top: 30px;
   }
 
-  .CartPage-promoBox {
-    width: 100%;
+  .cartItems-promoBox {
+    width: 70%;
     height: 50px;
   }
 
-  .CartPage-promoBox input {
-    width: 60%;
+  .cartItems-promoBox input {
     font-size: 14px;
     height: 40px;
   }
 
-  .CartPage-promoBox button {
-    width: 40%;
-    height: 50px;
-    font-size: 14px;
+  .cartItems-promoBox button {
+    margin-top: 30px;
+    width: 30%;
+    height: 20px;
+    font-size: 10px;
+    margin-left: -20px; 
   }
 }
