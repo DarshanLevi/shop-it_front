@@ -24,3 +24,34 @@
     margin-top: 50px;
     gap: 30px;
   }
+  @media (max-width: 470px) {
+    .RelatedProduct {
+      height: auto;
+      gap: 20px;
+      /* padding: 20px; */
+    }
+  
+    .RelatedProduct h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    .RelatedProduct hr {
+      width: 150px;
+      height: 4px;
+    }
+  
+    .RelatedProduct-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      margin-top: 30px;
+      padding-bottom: 10px;
+    }
+  
+    .RelatedProduct-item img {
+      height: 100px;
+      width: auto;
+    }
+  }
+  
