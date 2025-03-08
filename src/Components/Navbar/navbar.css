@@ -133,7 +133,7 @@
 
   /* Adjust login & cart section */
   .nav-login-cart {
-    gap: 10px;
+    gap: 25px;
   }
 
   .nav-login-cart img {
