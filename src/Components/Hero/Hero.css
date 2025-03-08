@@ -34,8 +34,8 @@
 }
 
 .hero-hand-icon {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   gap: 20px;
 }
 
@@ -63,4 +63,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 470px) {
+  .hero {
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .hero-left {
+    padding-left: 0;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-left h2 {
+    font-size: 22px;
+  }
+
+  .hero-left p {
+    font-size: 36px;
+  }
+
+  .hero-hand-icon img {
+    width: 60px;
+  }
+
+  .hero-latest-btn {
+    width: 230px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .hero-right img {
+    width: 80%;
+    max-width: 250px;
+  }
 }

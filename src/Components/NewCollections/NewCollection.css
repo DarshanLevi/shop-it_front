@@ -25,3 +25,40 @@
   margin-top: 50px;
   gap: 30px;
 }
+
+@media (max-width: 470px) {
+  .new-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px; 
+  }
+
+  .new-collection h1 {
+    font-size: 30px; 
+    color: #502222;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .new-collection hr {
+    width: 150px; 
+    background: #8d6363;
+  }
+
+  .collections {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .collections img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto;
+  }
+}

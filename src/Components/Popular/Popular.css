@@ -24,3 +24,36 @@ height: 90vh;
     display: flex;
     gap: 30px;
 }
+
+@media (max-width: 470px) {
+    .popular {
+      height: auto;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .popular h1 {
+      font-size: 28px;
+    }
+  
+    .popular hr {
+      width: 120px;
+      height: 3px;
+    }
+  
+    .popular-item {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      justify-content: center;
+    }
+  
+    .popular-item img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  
