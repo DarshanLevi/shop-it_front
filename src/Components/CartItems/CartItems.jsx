@@ -23,11 +23,11 @@ const CartItems = () => {
               <div className="cartItems-format cartItems-format-main">
                 <img src={e.image} alt="" className="cartIcon-product-icon" />
                 <p>{e.name}</p>
-                <p>${e.new_price}</p>
+                <p>₹{e.new_price}</p>
                 <button className="cartItems-quantity">
                   {cartItems[e.id]}
                 </button>
-                <p>${e.new_price * cartItems[e.id]}</p>
+                <p>₹{e.new_price * cartItems[e.id]}</p>
                 <img className="X-image"
                   src={remove_icon}
                   onClick={() => {
