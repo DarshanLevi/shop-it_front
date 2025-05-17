@@ -4,7 +4,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-// Lazy load route components
+
 const Shop = lazy(() => import("./Pages/Shop.jsx"));
 const ShopCategory = lazy(() => import("./Pages/ShopCategory.jsx"));
 const Product = lazy(() => import("./Pages/product.jsx"));
